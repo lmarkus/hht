@@ -247,7 +247,7 @@ $document.ready(function () {
      * @version      1.0.0
      * @license      MIT License
      * @link         http://cms.devoffice.com/coding-demo/mnemon1k/rd-validation/demo/
-     */
+     *
     if (plugins.mailForm.length) {
         if ("RDValidator" in jQuery.fn) {
 
@@ -289,7 +289,8 @@ $document.ready(function () {
                             }
                         }
                     };
-
+                console.log(mailFormSettings);
+                console.log(mailFormOptions);
                 $currentForm.RDValidator({
                     constraints: {
                         "@Time": {
@@ -302,6 +303,7 @@ $document.ready(function () {
             });
         }
     }
+        */
 
     /**
      * @module       Text rotator

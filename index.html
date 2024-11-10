@@ -207,25 +207,29 @@
                 <!--p.fw-l.h5.text-transform-none Enter your email address to receive all company news, special offers and other discount information.-->
                 <!-- RD Mailform-->
                 <!--form.rd-mailform.row(data-result-class='rd-mailform-validate', data-form-type='contact', method='post', action='https://api.form-data.com/f/mz0vgldqqj3to8282fekl')-->
-                <form class="rd-mailform row" data-result-class="rd-mailform-validate" data-form-type="contact" method="post" action="https://api.form-data.com/f/mz0vgldqqj3to8282fekl">
+                <script src="https://static.form-data.com/js/form-data-tools.v1.min.js"></script>
+                <form class="rd-mailform row" method="post" action="https://api.form-data.com/f/mz0vgldqqj3to8282fekl">
                   <div class="col-xs-12 col-sm-6">
-                    <input type="text" name="firstname" data-constraints="@NotEmpty" placeholder="Your first name...">
+                    <input type="text" name="firstname" placeholder="Your first name...">
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <input type="text" name="lastname" data-constraints="@NotEmpty" placeholder="Your last name...">
+                    <input type="text" name="lastname" placeholder="Your last name...">
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <input type="text" name="email" data-constraints="@NotEmpty @Email" placeholder="Your e-mail...">
+                    <input type="text" name="email" placeholder="Your e-mail...">
                   </div>
                   <div class="col-xs-12 col-sm-6">
-                    <input class="form-input" type="text" data-constraints="@Phone" name="phone" placeholder="Your phone...">
+                    <input class="form-input" type="text" name="phone" placeholder="Your phone...">
                   </div>
                   <div class="col-xs-12 col-sm-12">
-                    <textarea name="message" data-constraints="@NotEmpty" placeholder="Message:"></textarea>
+                    <textarea name="message" placeholder="Message:"></textarea>
                   </div>
-                  <!-- RD SelectMenu-->
-                  <button class="btn btn-primary btn-sm btn-min-width">send message</button>
+                  <!-- RD SelectMenu...
+                  -->
+                  <div class="form-data-powered-by" data-formdata-lang="en" data-formdata-sitename="Super Store" data-formdata-theme="light"></div>
+                  <button class="btn btn-primary btn-sm btn-min-width" type="submit">send message</button>
                 </form>
+                <script>_fd.scan()</script>
               </div>
             </div>
           </div>
