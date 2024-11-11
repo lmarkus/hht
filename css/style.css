@@ -12662,7 +12662,6 @@ address dl {
 
 .jumbotron-mod-1 {
   position: absolute;
-  display: flex;
   width: 100%;
   height: 100%;
   padding: 0 5%;
@@ -12670,12 +12669,17 @@ address dl {
 }
 @media (min-width: 768px) {
   .jumbotron-mod-1 {
-    padding: 0 10%;
+    padding: 100px 10%;
+  }
+}
+@media (min-width: 1200px) {
+  .jumbotron-mod-1 {
+    padding: 100px 10%;
   }
 }
 @media (min-width: 1400px) {
   .jumbotron-mod-1 {
-    padding: 0 30%;
+    padding: 100px 30%;
   }
 }
 .jumbotron-mod-1 > div {
@@ -12701,6 +12705,15 @@ address dl {
 .mobile .jumbotron-mod-1 p,
 .mobile .jumbotron-mod-1 .btn-group-variant {
   display: none;
+}
+
+.header-text {
+  padding-top: 25px;
+}
+@media (min-width: 768px) {
+  .header-text {
+    padding-top: 200px;
+  }
 }
 
 .btn-group-variant {
@@ -24505,6 +24518,25 @@ label span {
 
 .mfInput {
   position: relative;
+}
+
+.gluten-free {
+  position: relative;
+  border: 2px solid #4CAF50;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.gluten-free::after {
+  content: "🌾";
+  position: absolute;
+  top: -10px;
+  right: -10px;
+  background: white;
+  border-radius: 50%;
+  padding: 4px;
+  font-size: 16px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.2);
 }
 
 /*# sourceMappingURL=style.css.map */
