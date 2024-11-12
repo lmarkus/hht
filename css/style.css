@@ -428,14 +428,14 @@ img {
 }
 
 .img-rounded {
-  border-radius: 6px;
+  border-radius: 0.5rem;
 }
 
 .img-thumbnail {
   padding: 4px;
   line-height: 1.5;
   background-color: #f3f0eb;
-  border: 1px solid #ddd;
+  border: 1px solid var(--bs-border-color);
   border-radius: 0px;
   -webkit-transition: all 0.2s ease-in-out;
   -o-transition: all 0.2s ease-in-out;
@@ -453,7 +453,7 @@ hr {
   margin-top: 24px;
   margin-bottom: 24px;
   border: 0;
-  border-top: 1px solid #eadbc2;
+  border-top: 1px solid;
 }
 
 .sr-only {
@@ -24520,11 +24520,39 @@ label span {
   position: relative;
 }
 
+.col-md-4 {
+  padding: 7px;
+}
+
+.menu-item {
+  padding: 6px;
+  border: solid 1px #e7c084;
+  background-color: #fffcf8;
+  border-radius: 8px;
+}
+
+.menu-item:hover {
+  background-color: #faf1e4;
+}
+
+.menu-item .caption-mod-1 {
+  height: 300px;
+  overflow: auto;
+  color: #000;
+}
+
+.product-carousel {
+  height: 435px;
+}
+
 .gluten-free {
   position: relative;
-  border: 2px solid #4CAF50;
-  border-radius: 8px;
-  padding: 16px;
+  border-color: #4CAF50;
+  background-color: #e1f3e2;
+}
+
+.gluten-free:hover {
+  background-color: #cef0cf;
 }
 
 .gluten-free::after {
