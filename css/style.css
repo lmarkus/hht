@@ -24536,9 +24536,18 @@ label span {
 }
 
 .menu-item .caption-mod-1 {
-  height: 300px;
-  overflow: auto;
   color: #000;
+  padding: 0 6px;
+}
+.menu-item .caption-mod-1 p {
+  padding: 0 6px;
+  text-align: justify;
+}
+@media (min-width: 768px) {
+  .menu-item .caption-mod-1 {
+    height: 300px;
+    overflow: auto;
+  }
 }
 
 .product-carousel {
