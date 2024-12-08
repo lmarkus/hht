@@ -58,30 +58,24 @@
                   <li><a href="./">Home</a></li>
                   <li><a href="/breads.html">Breads</a></li>
                   <li><a href="/pastries.html">Pastries</a></li>
-                  <li><a href="#">Gluten Free / Health</a>
-                    <!-- RD Navbar Dropdown-->
-                    <ul class="rd-navbar-dropdown">
-                      <li><a href="#">Gluten Free</a></li>
-                      <li><a href="#">Sugar Free</a></li>
-                    </ul>
-                  </li>
+                  <li><a href="/gluten-free.html">Gluten-Free</a></li>
                   <li><a href="#">Specials</a>
                     <!-- RD Navbar Dropdown-->
                     <ul class="rd-navbar-dropdown">
                       <li><a href="/venezuela.html">Venezuelan Foods</a></li>
-                      <li><a href="#">High Holidays</a></li>
-                      <li><a href="#">Thanksgiving</a></li>
-                      <li><a href="#">Christmas</a></li>
-                      <li><a href="#">Custom Orders</a></li>
-                      <li><a href="#">Wholesale</a></li>
+                      <!--li: a(href="#") High Holidays-->
+                      <!--li: a(href="#") Thanksgiving-->
+                      <!--li: a(href="#") Christmas-->
+                      <li><a href="/contact_us.html">Custom Orders</a></li>
+                      <!--li: a(href="#") Wholesale-->
                     </ul>
                   </li>
                   <li class="active"><a href="#">About</a>
                     <!-- RD Navbar Dropdown-->
                     <ul class="rd-navbar-dropdown">
-                      <li><a href="#">About Us</a></li>
-                      <li><a href="#">Contact Us</a></li>
-                      <li><a href="#">FAQ</a></li>
+                      <!--li: a(href="#") About Us-->
+                      <li><a href="/contact_us.html">Contact Us</a></li>
+                      <!--li: a(href="#") FAQ-->
                     </ul>
                   </li>
                   <li><a href="https://www.hotplate.com/hearthandtart">ORDER</a></li>
@@ -93,7 +87,7 @@
         <section class="text-center">
           <div class="container">
             <div class="jumbotron text-center">
-              <h1><small>stay in touch with us</small><span class='text-bold'>contact information</span></h1>
+              <h1><small>get in touch with us</small><span class='text-bold'>contact information</span></h1>
             </div>
           </div>
         </section>
@@ -112,28 +106,32 @@
             <h2>Contact us</h2>
             <hr>
             <div class="row">
-              <div class="col-xs-12 col-md-8 col-md-offset-2">
-                <!-- RD Mailform-->
-                <form class="rd-mailform row" data-result-class="rd-mailform-validate" data-form-type="contact" method="post" action="bat/rd-mailform.php">
-                  <div class="col-xs-12 col-sm-6">
-                    <input type="text" name="name" data-constraints="@NotEmpty" placeholder="Your first name...">
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <input type="text" name="name" data-constraints="@NotEmpty" placeholder="Your last name...">
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <input type="text" name="email" data-constraints="@NotEmpty @Email" placeholder="Your e-mail...">
-                  </div>
-                  <div class="col-xs-12 col-sm-6">
-                    <input class="form-input" type="text" data-constraints="@Phone" name="phone" placeholder="Your phone...">
-                  </div>
-                  <div class="col-xs-12 col-sm-12">
-                    <textarea name="message" data-constraints="@NotEmpty" placeholder="Message:"></textarea>
-                  </div>
-                  <!-- RD SelectMenu-->
-                  <button class="btn btn-primary btn-sm btn-min-width">send message</button>
-                </form>
-              </div>
+              <div class="col-xs-12 col-md-8 col-md-offset-2"></div>
+              <!-- RD Mailform-->
+              <!--form.rd-mailform.row(data-result-class='rd-mailform-validate', data-form-type='contact', method='post', action='https://api.form-data.com/f/mz0vgldqqj3to8282fekl')-->
+              <script src="https://static.form-data.com/js/form-data-tools.v1.min.js"></script>
+              <form class="rd-mailform row" method="post" action="https://api.form-data.com/f/mz0vgldqqj3to8282fekl">
+                <div class="col-xs-12 col-sm-6">
+                  <input type="text" name="firstname" placeholder="Your first name...">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <input type="text" name="lastname" placeholder="Your last name...">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <input type="text" name="email" placeholder="Your e-mail...">
+                </div>
+                <div class="col-xs-12 col-sm-6">
+                  <input class="form-input" type="text" name="phone" placeholder="Your phone...">
+                </div>
+                <div class="col-xs-12 col-sm-12">
+                  <textarea name="message" placeholder="Message:"></textarea>
+                </div>
+                <!-- RD SelectMenu...
+                -->
+                <div class="form-data-powered-by" data-formdata-lang="en" data-formdata-sitename="Super Store" data-formdata-theme="light"></div>
+                <button class="btn btn-primary btn-sm btn-min-width" type="submit">send message</button>
+              </form>
+              <script>_fd.scan()</script>
             </div>
           </div>
         </section>
@@ -145,9 +143,8 @@
                   <div class="media">
                     <div class="media-left"><span class="icon icon-primary icon-sm fa-map-marker"></span></div>
                     <div class="media-body">
-                      <p class="h6">Postal Address</p><span><a href="#">
-                          The Company Name Inc.9863 - 9867 Mill Road,
-                          Cambridge, MG09 99HT.</a></span>
+                      <p class="h6">Address</p><span><a href="#">
+                          17735 Holiday Dr.Morgan Hill, CA 95037</a></span>
                     </div>
                   </div>
                 </address>
@@ -160,9 +157,7 @@
                       <p class="h6">Phones</p>
                       <dl class="dl-horizontal">
                         <dt>Phone:</dt>
-                        <dd><a href="callto:#">+1 800 603 6035</a></dd>
-                        <dt>FAX:</dt>
-                        <dd><a href="callto:#">+1 800 889 9898</a></dd>
+                        <dd><a href="callto:#">+1 (512) 221-4428<br><a href="callto:#">+1 (512) 791-2829</a></a></dd>
                       </dl>
                     </div>
                   </div>
@@ -173,7 +168,7 @@
                   <div class="media">
                     <div class="media-left"><span class="icon icon-primary icon-sm fa-envelope"></span></div>
                     <div class="media-body">
-                      <p class="h6">Email</p><a href="mailto:#">mail@demolink.org</a>
+                      <p class="h6">Email</p><a href="mailto:#">info@hearthandtart.com</a>
                     </div>
                   </div>
                 </address>

@@ -12669,17 +12669,7 @@ address dl {
 }
 @media (min-width: 768px) {
   .jumbotron-mod-1 {
-    padding: 100px 10%;
-  }
-}
-@media (min-width: 1200px) {
-  .jumbotron-mod-1 {
-    padding: 100px 10%;
-  }
-}
-@media (min-width: 1400px) {
-  .jumbotron-mod-1 {
-    padding: 100px 30%;
+    padding: 80px 10px;
   }
 }
 .jumbotron-mod-1 > div {
@@ -12712,7 +12702,7 @@ address dl {
 }
 @media (min-width: 768px) {
   .header-text {
-    padding-top: 200px;
+    padding-top: 60px;
   }
 }
 
@@ -14467,7 +14457,6 @@ blockquote {
 }
 @media (min-width: 1200px) {
   .section {
-    padding-top: 90px;
     padding-bottom: 68px;
   }
 }
@@ -19400,14 +19389,14 @@ img.mfp-img {
 }
 @media (min-width: 768px) {
   .rd-navbar-brand .logo {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 }
 @media (min-width: 1200px) {
   .rd-navbar-brand .logo {
-    width: 200px;
-    height: 200px;
+    width: 100px;
+    height: 100px;
   }
 }
 
@@ -20313,6 +20302,8 @@ img.mfp-img {
 }
 .rd-navbar-fullwidth .rd-navbar-panel {
   text-align: center;
+  display: table-cell;
+  vertical-align: middle;
 }
 @media (min-width: 1200px) {
   .rd-navbar-fullwidth .rd-navbar-panel {
@@ -20323,6 +20314,8 @@ img.mfp-img {
   position: relative;
   padding-bottom: 1px;
   padding-top: 3px;
+  display: table-cell;
+  vertical-align: middle;
 }
 @media (min-width: 992px) {
   .rd-navbar-fullwidth .rd-navbar-nav-wrap {
@@ -22069,11 +22062,6 @@ a.fa-shopping-cart,
   left: 0;
   width: 100%;
 }
-@media (min-width: 1600px) {
-  .swiper-container-horizontal > .swiper-pagination {
-    bottom: 40px;
-  }
-}
 
 /* 3D Container */
 .swiper-container-3d {
@@ -22510,14 +22498,9 @@ a.fa-shopping-cart,
 .swiper-slider {
   height: 170px;
 }
-@media (min-width: 560px) {
-  .swiper-slider {
-    height: 300px;
-  }
-}
 @media (min-width: 768px) {
   .swiper-slider {
-    height: 100vh;
+    height: 300px;
   }
 }
 .tablet .swiper-slider, .ipad .swiper-slider {
@@ -22530,7 +22513,7 @@ a.fa-shopping-cart,
 }
 @media (min-width: 1280px) {
   .swiper-slider {
-    min-height: 600px;
+    min-height: 300px;
   }
 }
 
@@ -24575,6 +24558,21 @@ label span {
   padding: 4px;
   font-size: 16px;
   box-shadow: 0 1px 3px rgba(0, 0, 0, 0.21);
+}
+
+.slogan p,
+.slogan .btn-group-variant {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 10%;
+}
+@media (min-width: 1200px) {
+  .slogan p,
+  .slogan .btn-group-variant {
+    width: 700px;
+    min-height: 100px;
+    padding: 10px 0;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
