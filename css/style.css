@@ -24575,4 +24575,33 @@ label span {
   }
 }
 
+.announcement-banner {
+  position: sticky;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #f8d7da;
+  color: #721c24;
+  padding: 12px 20px;
+  text-align: center;
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  border: solid 3px red;
+  font-size: 1.25em;
+}
+.announcement-banner a {
+  color: #721c24;
+  text-decoration: underline;
+  font-weight: 600;
+}
+
+.announcement-content {
+  flex-grow: 1;
+  margin: 0 20px;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
 /*# sourceMappingURL=style.css.map */
